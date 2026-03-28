@@ -174,7 +174,7 @@ int main() {
 }
 ~~~
 
-# How To Run ? 
+# How To Run 
 **[1] Add Book Function**
 <img width="1428" height="261" alt="image" src="https://github.com/user-attachments/assets/bf9470bc-f42a-4c08-bfa3-e88bb9802fd8" />
 -> Dapat menginput judul buku yang ingin disimpan. 
@@ -185,7 +185,7 @@ int main() {
 -> Output daftar buku yang sudah di input oleh user.
 
 
-**[3] Add Priority Book Function **
+**[3] Add Priority Book Function**
 <img width="1172" height="545" alt="image" src="https://github.com/user-attachments/assets/b571f139-6b40-40df-83ec-94b2ab1abe30" />
 -> Memprioritaskan buku yang diinput dengan menyimpannya di top queue. 
 
@@ -195,7 +195,7 @@ int main() {
 -> Menghilangkan daftar buku yang paling _top_ atau mem pop agar sudah tercoret dari queue.
 
 
-**[5] Undo Function **
+**[5] Undo Function**
 <img width="916" height="212" alt="image" src="https://github.com/user-attachments/assets/130d25b8-8e77-420e-9ebb-1821d9bc1b2a" />
 -> Melihat fungsi yang terakhir dilakukan oleh user.
 
