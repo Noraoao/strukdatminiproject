@@ -7,6 +7,12 @@ Untuk Mini Project, saya memiliki ide untuk membuat program yang dapat menyimpan
 **[Deque]** -> Bisa memprioritaskan buku yang mereka mau baca, bisa pula mencoret atau menghilangkan buku dari list jika mereka sudah membacanya.
 **[Stack]** -> Lalu juga bisa undo untuk melihat apa yang terakhir kali user lakukan. 
 
+_For the Mini Project, I have an idea to create a program that can store a book wishlist. This would help people who love reading to save a list of books they want to buy or read. 
+**[Queue]** -> Users can add books they want to read, and these will be stored in a queue.
+**[Deque]** -> Users can prioritize the books they want to read, and they can also cross out or remove books from the list once they’ve read them.
+**[Stack]** -> Users can also use the undo feature to see what they did last. 
+_
+
 # Source Code (C)
 ~~~c
 #include <stdio.h>
