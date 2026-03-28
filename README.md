@@ -176,31 +176,31 @@ int main() {
 
 # How To Run 
 **[1] Add Book Function**
-<img width="1428" height="261" alt="image" src="https://github.com/user-attachments/assets/bf9470bc-f42a-4c08-bfa3-e88bb9802fd8" />
 -> Dapat menginput judul buku yang ingin disimpan. 
+<img width="1428" height="261" alt="image" src="https://github.com/user-attachments/assets/bf9470bc-f42a-4c08-bfa3-e88bb9802fd8" />
 
 
 **[2] Show Wishlist Function**
-<img width="1262" height="289" alt="image" src="https://github.com/user-attachments/assets/e1f82296-acf8-4cd4-bf8f-8ab768ca435d" />
 -> Output daftar buku yang sudah di input oleh user.
+<img width="1262" height="289" alt="image" src="https://github.com/user-attachments/assets/e1f82296-acf8-4cd4-bf8f-8ab768ca435d" />
 
 
 **[3] Add Priority Book Function**
-<img width="1172" height="545" alt="image" src="https://github.com/user-attachments/assets/b571f139-6b40-40df-83ec-94b2ab1abe30" />
 -> Memprioritaskan buku yang diinput dengan menyimpannya di top queue. 
+<img width="1172" height="545" alt="image" src="https://github.com/user-attachments/assets/b571f139-6b40-40df-83ec-94b2ab1abe30" />
 
 
 **[4] Start Reading Book Function**
-<img width="1021" height="486" alt="image" src="https://github.com/user-attachments/assets/1d287ff2-fdf9-42dc-a1d2-f3a80197cbed" />
 -> Menghilangkan daftar buku yang paling _top_ atau mem pop agar sudah tercoret dari queue.
+<img width="1021" height="486" alt="image" src="https://github.com/user-attachments/assets/1d287ff2-fdf9-42dc-a1d2-f3a80197cbed" />
 
 
 **[5] Undo Function**
-<img width="916" height="212" alt="image" src="https://github.com/user-attachments/assets/130d25b8-8e77-420e-9ebb-1821d9bc1b2a" />
 -> Melihat fungsi yang terakhir dilakukan oleh user.
+<img width="916" height="212" alt="image" src="https://github.com/user-attachments/assets/130d25b8-8e77-420e-9ebb-1821d9bc1b2a" />
 
 
 **[6] Quit Function**
-<img width="959" height="199" alt="image" src="https://github.com/user-attachments/assets/8bcc43b1-29c0-4519-8b13-7a8922fd7114" />
 -> Keluar dari program.
+<img width="959" height="199" alt="image" src="https://github.com/user-attachments/assets/8bcc43b1-29c0-4519-8b13-7a8922fd7114" />
 
