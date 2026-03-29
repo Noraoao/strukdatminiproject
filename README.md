@@ -23,6 +23,7 @@ typedef struct {
     char title[100];
 } Book;
 
+/*Stack itu buat undo push n pop, queue buat input blkg, deque buat input dari depan*/
 typedef struct {
     Book data[MAX];
     int top;
@@ -38,23 +39,27 @@ typedef struct {
     int front, rear;
 } Deque;
 
+
 Stack undoStack;
 Queue readingQueue;
 Deque wishlist;
 
-void initStack(Stack *s) {
+
+void Stacknya(Stack *s) {
     s->top = -1;
 }
 
-void initQueue(Queue *q) {
+void Queuenya(Queue *q) {
     q->front = q->rear = -1;
 }
 
-void initDeque(Deque *d) {
+void Dequenya(Deque *d) {
     d->front = MAX / 2;
     d->rear = MAX / 2 - 1;
 }
 
+
+//stack
 void push(Stack *s, Book b) {
     if (s->top < MAX - 1)
         s->data[++s->top] = b;
@@ -66,6 +71,8 @@ Book pop(Stack *s) {
     return s->data[s->top--];
 }
 
+
+//queue
 void enqueue(Queue *q, Book b) {
     if (q->rear == MAX - 1) return;
 
@@ -73,6 +80,8 @@ void enqueue(Queue *q, Book b) {
     q->data[++q->rear] = b;
 }
 
+
+//deque
 void addRear(Deque *d, Book b) {
     if (d->rear == MAX - 1) return;
     d->data[++d->rear] = b;
@@ -91,6 +100,7 @@ Book removeFrontDeque(Deque *d) {
 
     return d->data[d->front++];
 }
+
 
 void showWishlist() {
     if (wishlist.front > wishlist.rear) {
@@ -116,15 +126,14 @@ void menu() {
         printf("4. Undo\n");
         printf("5. Show Wishlist\n");
         printf("6. Exit\n");
-        printf("Choice: ");
-        scanf("%d", &choice);
+        printf("Choice: "); scanf("%d", &choice);
         getchar();
 
         switch(choice) {
-
             case 1:
                 printf("Book title: ");
                 fgets(b.title, 100, stdin);
+
                 addRear(&wishlist, b);
                 push(&undoStack, b);
                 printf("Added to wishlist!\n");
@@ -133,6 +142,7 @@ void menu() {
             case 2:
                 printf("Priority book: ");
                 fgets(b.title, 100, stdin);
+
                 addFront(&wishlist, b);
                 push(&undoStack, b);
                 printf("Priority book added!\n");
@@ -140,6 +150,7 @@ void menu() {
 
             case 3:
                 b = removeFrontDeque(&wishlist);
+
                 if (strcmp(b.title, "EMPTY") != 0) {
                     enqueue(&readingQueue, b);
                     printf("Now reading: %s", b.title);
@@ -150,6 +161,7 @@ void menu() {
 
             case 4:
                 b = pop(&undoStack);
+
                 if (strcmp(b.title, "EMPTY") != 0)
                     printf("Undo: %s", b.title);
                 else
@@ -166,9 +178,10 @@ void menu() {
 }
 
 int main() {
-    initStack(&undoStack);
-    initQueue(&readingQueue);
-    initDeque(&wishlist);
+    Stacknya(&undoStack);
+    Queuenya(&readingQueue);
+    Dequenya(&wishlist);
+
     menu();
     return 0;
 }
